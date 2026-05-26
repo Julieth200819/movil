@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.hotelbooking.app-mergeDebugResources-35:/layout/activity_home.xml",
+        "source": "com.hotelbooking.app-main-38:/layout/activity_home.xml"
+    },
+    {
+        "merged": "com.hotelbooking.app-mergeDebugResources-35:/layout/item_perfil_dato.xml",
+        "source": "com.hotelbooking.app-main-38:/layout/item_perfil_dato.xml"
+    },
+    {
+        "merged": "com.hotelbooking.app-mergeDebugResources-35:/layout/activity_login.xml",
+        "source": "com.hotelbooking.app-main-38:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.hotelbooking.app-mergeDebugResources-35:/layout/activity_register.xml",
+        "source": "com.hotelbooking.app-main-38:/layout/activity_register.xml"
+    }
+]

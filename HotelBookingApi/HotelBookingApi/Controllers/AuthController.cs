@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using HotelBookingApi.Data;
 using HotelBookingApi.Models;
-using HotelBookingApi.Models.DTOs;
 using BCrypt.Net;
+using HotelBookingApi.Models.DTOS;
 
 namespace HotelBookingApi.Controllers
 {

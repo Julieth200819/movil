@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\hjuli\\Desktop\\movil\\HotelBookingApi\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A9FB1EC0-5C62-442B-8B3D-1B04454B1174}|HotelBookingApi\\HotelBookingApi.csproj|c:\\users\\hjuli\\desktop\\movil\\hotelbookingapi\\hotelbookingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9FB1EC0-5C62-442B-8B3D-1B04454B1174}|HotelBookingApi\\HotelBookingApi.csproj|solutionrelative:hotelbookingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9FB1EC0-5C62-442B-8B3D-1B04454B1174}|HotelBookingApi\\HotelBookingApi.csproj|c:\\users\\hjuli\\desktop\\movil\\hotelbookingapi\\hotelbookingapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9FB1EC0-5C62-442B-8B3D-1B04454B1174}|HotelBookingApi\\HotelBookingApi.csproj|solutionrelative:hotelbookingapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9FB1EC0-5C62-442B-8B3D-1B04454B1174}|HotelBookingApi\\HotelBookingApi.csproj|c:\\users\\hjuli\\desktop\\movil\\hotelbookingapi\\hotelbookingapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9FB1EC0-5C62-442B-8B3D-1B04454B1174}|HotelBookingApi\\HotelBookingApi.csproj|solutionrelative:hotelbookingapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\hjuli\\Desktop\\movil\\HotelBookingApi\\HotelBookingApi\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "HotelBookingApi\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\hjuli\\Desktop\\movil\\HotelBookingApi\\HotelBookingApi\\Models\\Usuario.cs",
+              "RelativeToolTip": "HotelBookingApi\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T23:55:40.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hjuli\\Desktop\\movil\\HotelBookingApi\\HotelBookingApi\\Program.cs",
+              "RelativeDocumentMoniker": "HotelBookingApi\\Program.cs",
+              "ToolTip": "C:\\Users\\hjuli\\Desktop\\movil\\HotelBookingApi\\HotelBookingApi\\Program.cs",
+              "RelativeToolTip": "HotelBookingApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T23:50:02.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\hjuli\\Desktop\\movil\\HotelBookingApi\\HotelBookingApi\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "HotelBookingApi\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\hjuli\\Desktop\\movil\\HotelBookingApi\\HotelBookingApi\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "HotelBookingApi\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwB0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T23:33:48.935Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
