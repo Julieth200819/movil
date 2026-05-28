@@ -1,29 +1,32 @@
 // Program.cs
 using HotelBookingApi.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.HttpLogging;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Cadena de conexión MySQL (ajusta user/password según tu MySQL local)
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
-
 builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 
-// CORS para permitir conexión desde el emulador Android
+builder.Services.AddHttpLogging(logging =>
+{
+    logging.LoggingFields = HttpLoggingFields.All;
+});
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
         policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 });
 
-var app = builder.Build();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        new MySqlServerVersion(new Version(8, 0, 36)) // versión de tu MySQL
+    ));
 
-app.UseCors("AllowAll");
+var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
@@ -31,5 +34,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseHttpLogging();
+app.UseCors("AllowAll");
+app.UseAuthorization();
 app.MapControllers();
-app.Run();
+
+// Aquí SIEMPRE debe ir app.Run()
+app.Run("http://0.0.0.0:5000");
