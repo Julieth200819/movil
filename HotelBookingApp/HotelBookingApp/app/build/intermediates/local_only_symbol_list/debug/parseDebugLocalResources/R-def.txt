@@ -1,0 +1,32 @@
+R_DEF: Internal format may change without notice
+local
+color background
+color error
+color on_background
+color primary
+color primary_dark
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id btnLogin
+id btnLogout
+id btnMakeReservation
+id btnRegister
+id etApellido
+id etCedula
+id etCelular
+id etCorreo
+id etNombre
+id etPassword
+id progressBar
+id tvEmail
+id tvLogin
+id tvRegister
+id tvWelcome
+layout activity_home
+layout activity_login
+layout activity_register
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.HotelBooking

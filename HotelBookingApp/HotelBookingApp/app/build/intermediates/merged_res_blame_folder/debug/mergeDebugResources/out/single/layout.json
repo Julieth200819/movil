@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-mergeDebugResources-36:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-main-39:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-mergeDebugResources-36:\\layout\\activity_home.xml",
+        "source": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-main-39:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-mergeDebugResources-36:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-main-39:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "com.example.hotelbooking.app-mergeDebugResources-36:/layout/activity_home.xml",
+        "source": "com.example.hotelbooking.app-main-39:/layout/activity_home.xml"
+    }
+]
