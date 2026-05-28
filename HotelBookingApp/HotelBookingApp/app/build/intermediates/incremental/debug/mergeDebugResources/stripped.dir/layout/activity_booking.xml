@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1A237E"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:paddingTop="48dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@android:drawable/ic_media_previous"
+                    android:background="@drawable/circle_button_bg"
+                    android:tint="#FFFFFF"
+                    android:contentDescription="Volver"
+                    android:layout_marginEnd="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nueva Reserva"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvHotelNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotel Name"
+                android:textSize="16sp"
+                android:textColor="#B0BEC5"/>
+
+            <TextView
+                android:id="@+id/tvPrecioNoche"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$280,000 / noche"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Dates Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📅 Fechas de estadía"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#1A237E"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Check-in -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check-in"
+                    android:textSize="12sp"
+                    android:textColor="#757575"
+                    android:layout_marginBottom="6dp"/>
+
+                <Button
+                    android:id="@+id/btnFechaEntrada"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:text="Seleccionar fecha de entrada"
+                    android:textSize="14sp"
+                    android:textColor="#757575"
+                    android:backgroundTint="#F5F7FA"
+                    android:gravity="start|center_vertical"
+                    android:paddingStart="16dp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Check-out -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check-out"
+                    android:textSize="12sp"
+                    android:textColor="#757575"
+                    android:layout_marginBottom="6dp"/>
+
+                <Button
+                    android:id="@+id/btnFechaSalida"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:text="Seleccionar fecha de salida"
+                    android:textSize="14sp"
+                    android:textColor="#757575"
+                    android:backgroundTint="#F5F7FA"
+                    android:gravity="start|center_vertical"
+                    android:paddingStart="16dp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Guests Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👥 Huéspedes"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#1A237E"
+                    android:layout_marginBottom="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <Button
+                        android:id="@+id/btnGuestsMinus"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:text="−"
+                        android:textSize="20sp"
+                        android:padding="0dp"
+                        app:backgroundTint="#E8EAF6"
+                        android:textColor="#1565C0"
+                        style="@style/Widget.MaterialComponents.Button"/>
+
+                    <TextView
+                        android:id="@+id/tvGuests"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="1 huésped"
+                        android:textSize="16sp"
+                        android:textColor="#212121"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/btnGuestsPlus"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:text="+"
+                        android:textSize="20sp"
+                        android:padding="0dp"
+                        app:backgroundTint="#1565C0"
+                        android:textColor="#FFFFFF"
+                        style="@style/Widget.MaterialComponents.Button"/>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Room Type Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🛏 Tipo de habitación"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#1A237E"
+                    android:layout_marginBottom="12dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rgTipoHabitacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbEstandar"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Estándar"
+                        android:textSize="15sp"
+                        android:checked="true"
+                        android:buttonTint="#1565C0"
+                        android:layout_marginBottom="4dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rbSuperior"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Superior"
+                        android:textSize="15sp"
+                        android:buttonTint="#1565C0"
+                        android:layout_marginBottom="4dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rbSuite"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Suite"
+                        android:textSize="15sp"
+                        android:buttonTint="#1565C0"/>
+                </RadioGroup>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Price Summary Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardPrecioTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#E8EAF6"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Resumen"
+                        android:textSize="12sp"
+                        android:textColor="#5C6BC0"/>
+
+                    <TextView
+                        android:id="@+id/tvNochesInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 noches"
+                        android:textSize="16sp"
+                        android:textColor="#1A237E"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="end">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total"
+                        android:textSize="12sp"
+                        android:textColor="#5C6BC0"/>
+
+                    <TextView
+                        android:id="@+id/tvPrecioTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$560,000"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#1565C0"/>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Confirm Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfirmarReserva"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="✅ Confirmar Reserva"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="#1565C0"
+            app:cornerRadius="12dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressReserva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

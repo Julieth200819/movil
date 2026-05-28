@@ -12,16 +12,32 @@
         "source": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-main-39:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
+        "merged": "com.example.hotelbooking.app-debug-37:/layout_item_hotel.xml.flat",
+        "source": "com.example.hotelbooking.app-main-39:/layout/item_hotel.xml"
+    },
+    {
         "merged": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-debug-37:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-main-39:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.hotelbooking.app-debug-37:/layout_activity_home.xml.flat",
-        "source": "com.example.hotelbooking.app-main-39:/layout/activity_home.xml"
-    },
-    {
         "merged": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-debug-37:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-main-39:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-debug-37:\\drawable_circle_button_bg.xml.flat",
+        "source": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-main-39:\\drawable\\circle_button_bg.xml"
+    },
+    {
+        "merged": "com.example.hotelbooking.app-debug-37:/layout_activity_booking.xml.flat",
+        "source": "com.example.hotelbooking.app-main-39:/layout/activity_booking.xml"
+    },
+    {
+        "merged": "com.example.hotelbooking.app-debug-37:/layout_activity_my_bookings.xml.flat",
+        "source": "com.example.hotelbooking.app-main-39:/layout/activity_my_bookings.xml"
+    },
+    {
+        "merged": "com.example.hotelbooking.app-debug-37:/layout_activity_hotel_detail.xml.flat",
+        "source": "com.example.hotelbooking.app-main-39:/layout/activity_hotel_detail.xml"
     },
     {
         "merged": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-debug-37:\\layout_activity_login.xml.flat",
@@ -30,5 +46,9 @@
     {
         "merged": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-debug-37:\\layout_activity_home.xml.flat",
         "source": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-main-39:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "com.example.hotelbooking.app-debug-37:/layout_item_reserva.xml.flat",
+        "source": "com.example.hotelbooking.app-main-39:/layout/item_reserva.xml"
     }
 ]

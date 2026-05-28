@@ -33,9 +33,9 @@ class AuthRepository(private val api: ApiService) {
         return try {
             val response = api.login(LoginRequest(correo, password))
             if (response.isSuccessful) {
-                val body = response.body()
-                if (body != null) {
-                    Result.success(body)
+                val authResponse = response.body()
+                if (authResponse?.user != null) {
+                    Result.success(authResponse.user) // Retornamos el objeto User directo del Back
                 } else {
                     Result.failure(Exception("Respuesta del servidor vacía"))
                 }

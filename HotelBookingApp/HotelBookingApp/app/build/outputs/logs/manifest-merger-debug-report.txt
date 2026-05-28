@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:2:1-30:12
 MERGED from [androidx.databinding:viewbinding:8.13.2] C:\Users\hjuli\.gradle\caches\8.13\transforms\ff5aeaea174043204e4d33fb04bd7f8c\transformed\jetified-viewbinding-8.13.2\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\hjuli\.gradle\caches\8.13\transforms\2d887e36f91c2c525b512fe0901627b4\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\hjuli\.gradle\caches\8.13\transforms\ee60159a3e1ecc90af079a66794b1831\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -65,8 +65,8 @@ ADDED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\
 	android:name
 		ADDED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:6:5-26:19
-INJECTED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:6:5-26:19
+ADDED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:6:5-29:19
+INJECTED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:6:5-29:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\hjuli\.gradle\caches\8.13\transforms\2d887e36f91c2c525b512fe0901627b4\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\hjuli\.gradle\caches\8.13\transforms\2d887e36f91c2c525b512fe0901627b4\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\hjuli\.gradle\caches\8.13\transforms\ee60159a3e1ecc90af079a66794b1831\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -135,6 +135,24 @@ ADDED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\
 		ADDED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:24:64-88
 	android:name
 		ADDED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:24:19-55
+activity#com.example.hotelbooking.ui.hotel.HotelDetailActivity
+ADDED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:25:9-90
+	android:exported
+		ADDED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:25:64-88
+	android:name
+		ADDED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:25:19-63
+activity#com.example.hotelbooking.ui.booking.BookingActivity
+ADDED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:26:9-90
+	android:exported
+		ADDED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:26:64-88
+	android:name
+		ADDED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:26:19-61
+activity#com.example.hotelbooking.ui.mybookings.MyBookingsActivity
+ADDED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:27:9-94
+	android:exported
+		ADDED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:27:68-92
+	android:name
+		ADDED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml:27:19-67
 uses-sdk
 INJECTED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\hjuli\Desktop\movil\HotelBookingApp\HotelBookingApp\app\src\main\AndroidManifest.xml

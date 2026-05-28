@@ -46,6 +46,15 @@
         <activity
             android:name="com.example.hotelbooking.ui.home.HomeActivity"
             android:exported="false" />
+        <activity
+            android:name="com.example.hotelbooking.ui.hotel.HotelDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.hotelbooking.ui.booking.BookingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.hotelbooking.ui.mybookings.MyBookingsActivity"
+            android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

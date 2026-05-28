@@ -39,7 +39,7 @@ namespace HotelBookingApi.Models.DTOS
         public string Contrasena { get; set; } = string.Empty;
     }
 
-    public class LoginResponse
+    public class UserDto
     {
         public int Id { get; set; }
         public string Nombre { get; set; } = string.Empty;
@@ -47,6 +47,11 @@ namespace HotelBookingApi.Models.DTOS
         public string Correo { get; set; } = string.Empty;
         public string Cedula { get; set; } = string.Empty;
         public string Celular { get; set; } = string.Empty;
+    }
+
+    public class LoginResponse
+    {
+        public UserDto? User { get; set; }
         public string Mensaje { get; set; } = string.Empty;
     }
 }

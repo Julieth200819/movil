@@ -4,46 +4,73 @@ package com.example.hotelbooking.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.hotelbooking.R;
+import com.google.android.material.textfield.TextInputEditText;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ActivityHomeBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final CoordinatorLayout rootView;
 
   @NonNull
-  public final Button btnLogout;
+  public final ImageButton btnLogout;
 
   @NonNull
-  public final Button btnMakeReservation;
+  public final ImageButton btnMyBookings;
 
   @NonNull
-  public final TextView tvEmail;
+  public final TextInputEditText etSearch;
+
+  @NonNull
+  public final LinearLayout headerCard;
+
+  @NonNull
+  public final ProgressBar progressBar;
+
+  @NonNull
+  public final RecyclerView rvHoteles;
+
+  @NonNull
+  public final TextView tvHotelCount;
+
+  @NonNull
+  public final TextView tvSubtitle;
 
   @NonNull
   public final TextView tvWelcome;
 
-  private ActivityHomeBinding(@NonNull LinearLayout rootView, @NonNull Button btnLogout,
-      @NonNull Button btnMakeReservation, @NonNull TextView tvEmail, @NonNull TextView tvWelcome) {
+  private ActivityHomeBinding(@NonNull CoordinatorLayout rootView, @NonNull ImageButton btnLogout,
+      @NonNull ImageButton btnMyBookings, @NonNull TextInputEditText etSearch,
+      @NonNull LinearLayout headerCard, @NonNull ProgressBar progressBar,
+      @NonNull RecyclerView rvHoteles, @NonNull TextView tvHotelCount, @NonNull TextView tvSubtitle,
+      @NonNull TextView tvWelcome) {
     this.rootView = rootView;
     this.btnLogout = btnLogout;
-    this.btnMakeReservation = btnMakeReservation;
-    this.tvEmail = tvEmail;
+    this.btnMyBookings = btnMyBookings;
+    this.etSearch = etSearch;
+    this.headerCard = headerCard;
+    this.progressBar = progressBar;
+    this.rvHoteles = rvHoteles;
+    this.tvHotelCount = tvHotelCount;
+    this.tvSubtitle = tvSubtitle;
     this.tvWelcome = tvWelcome;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -69,20 +96,50 @@ public final class ActivityHomeBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.btnLogout;
-      Button btnLogout = ViewBindings.findChildViewById(rootView, id);
+      ImageButton btnLogout = ViewBindings.findChildViewById(rootView, id);
       if (btnLogout == null) {
         break missingId;
       }
 
-      id = R.id.btnMakeReservation;
-      Button btnMakeReservation = ViewBindings.findChildViewById(rootView, id);
-      if (btnMakeReservation == null) {
+      id = R.id.btnMyBookings;
+      ImageButton btnMyBookings = ViewBindings.findChildViewById(rootView, id);
+      if (btnMyBookings == null) {
         break missingId;
       }
 
-      id = R.id.tvEmail;
-      TextView tvEmail = ViewBindings.findChildViewById(rootView, id);
-      if (tvEmail == null) {
+      id = R.id.etSearch;
+      TextInputEditText etSearch = ViewBindings.findChildViewById(rootView, id);
+      if (etSearch == null) {
+        break missingId;
+      }
+
+      id = R.id.headerCard;
+      LinearLayout headerCard = ViewBindings.findChildViewById(rootView, id);
+      if (headerCard == null) {
+        break missingId;
+      }
+
+      id = R.id.progressBar;
+      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar == null) {
+        break missingId;
+      }
+
+      id = R.id.rvHoteles;
+      RecyclerView rvHoteles = ViewBindings.findChildViewById(rootView, id);
+      if (rvHoteles == null) {
+        break missingId;
+      }
+
+      id = R.id.tvHotelCount;
+      TextView tvHotelCount = ViewBindings.findChildViewById(rootView, id);
+      if (tvHotelCount == null) {
+        break missingId;
+      }
+
+      id = R.id.tvSubtitle;
+      TextView tvSubtitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvSubtitle == null) {
         break missingId;
       }
 
@@ -92,8 +149,8 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityHomeBinding((LinearLayout) rootView, btnLogout, btnMakeReservation,
-          tvEmail, tvWelcome);
+      return new ActivityHomeBinding((CoordinatorLayout) rootView, btnLogout, btnMyBookings,
+          etSearch, headerCard, progressBar, rvHoteles, tvHotelCount, tvSubtitle, tvWelcome);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

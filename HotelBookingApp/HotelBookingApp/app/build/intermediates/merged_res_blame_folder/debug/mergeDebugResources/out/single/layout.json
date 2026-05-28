@@ -1,18 +1,34 @@
 [
     {
+        "merged": "com.example.hotelbooking.app-mergeDebugResources-36:/layout/activity_booking.xml",
+        "source": "com.example.hotelbooking.app-main-39:/layout/activity_booking.xml"
+    },
+    {
         "merged": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-mergeDebugResources-36:\\layout\\activity_register.xml",
         "source": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-main-39:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "com.example.hotelbooking.app-mergeDebugResources-36:/layout/item_hotel.xml",
+        "source": "com.example.hotelbooking.app-main-39:/layout/item_hotel.xml"
+    },
+    {
+        "merged": "com.example.hotelbooking.app-mergeDebugResources-36:/layout/activity_hotel_detail.xml",
+        "source": "com.example.hotelbooking.app-main-39:/layout/activity_hotel_detail.xml"
     },
     {
         "merged": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-mergeDebugResources-36:\\layout\\activity_home.xml",
         "source": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-main-39:\\layout\\activity_home.xml"
     },
     {
+        "merged": "com.example.hotelbooking.app-mergeDebugResources-36:/layout/activity_my_bookings.xml",
+        "source": "com.example.hotelbooking.app-main-39:/layout/activity_my_bookings.xml"
+    },
+    {
         "merged": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-mergeDebugResources-36:\\layout\\activity_login.xml",
         "source": "C:\\Users\\hjuli\\.gradle\\daemon\\8.13\\com.example.hotelbooking.app-main-39:\\layout\\activity_login.xml"
     },
     {
-        "merged": "com.example.hotelbooking.app-mergeDebugResources-36:/layout/activity_home.xml",
-        "source": "com.example.hotelbooking.app-main-39:/layout/activity_home.xml"
+        "merged": "com.example.hotelbooking.app-mergeDebugResources-36:/layout/item_reserva.xml",
+        "source": "com.example.hotelbooking.app-main-39:/layout/item_reserva.xml"
     }
 ]
